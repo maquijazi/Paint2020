@@ -77,9 +77,6 @@
     <Component class="codigo.PanelColores" name="panelColores1">
     </Component>
     <Component class="codigo.Herramientas" name="herramientas1">
-      <Events>
-        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="herramientas1MousePressed"/>
-      </Events>
     </Component>
   </SubComponents>
 </Form>

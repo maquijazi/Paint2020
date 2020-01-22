@@ -89,12 +89,6 @@ public class VentanaPaint extends javax.swing.JFrame {
             .addGap(0, 387, Short.MAX_VALUE)
         );
 
-        herramientas1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                herramientas1MousePressed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -136,12 +130,8 @@ public class VentanaPaint extends javax.swing.JFrame {
         repaint(0, 0, 1, 1); //refresca pantalla 
     }//GEN-LAST:event_jPanel1MouseDragged
 
-    private void herramientas1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_herramientas1MousePressed
-        herramientaSeleccionada = 1; //Cambio a pintar circulos
-    }//GEN-LAST:event_herramientas1MousePressed
-
     private void jPanel1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MousePressed
-        switch (herramientaSeleccionada) {
+        switch (herramientas1.formaElegida) {
             case 0:
                 break;
             case 1:
